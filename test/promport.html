@@ -1,0 +1,24 @@
+<p>see the browser console!</p>
+
+<script type="text/javascript" src="../promport/index.js"></script>
+
+<script type="text/javascript">
+
+(async function()
+{
+	const test	= await promport("./promport/test.js");
+	const test2	= await promport("./promport/test2.js");
+
+	console.log("promport 1", test, test2);
+
+})();
+
+(async function()
+{
+	const test	= await promport("./promport/test.js");
+
+	console.log("promport 2", test);
+
+})();
+
+</script>

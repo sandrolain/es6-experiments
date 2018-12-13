@@ -1,0 +1,21 @@
+<p>see the browser console!</p>
+
+<script type="module">
+
+	import {
+		unique
+	} from "../array-filters/index.js";
+
+	(async () =>
+	{
+		const arr01 = [1, 2, 3, 4, 3, 2, 1, 5, 6, 7, 8, 7, 6, 5];
+
+		console.log(
+			"unique",
+			arr01,
+			arr01.filter(unique)
+		);
+
+	})();
+
+</script>

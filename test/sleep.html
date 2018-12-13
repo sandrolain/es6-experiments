@@ -1,0 +1,17 @@
+<p>see the browser console!</p>
+
+<script type="module">
+
+	import sleep from "../sleep/index.js";
+
+	(async () =>
+	{
+		console.log("Before Sleep", new Date());
+
+		const sleepResult = await sleep(3000);
+
+		console.log("Sleep Result", sleepResult);
+
+	})();
+
+</script>
