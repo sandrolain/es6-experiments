@@ -7,6 +7,7 @@ At the moment we have in the laboratory:
 - **promport**: module import with Promise
 - **sleep**: sleep function with Promise
 - **array-filters**: collection of function for array.filter method
+- **smart-obj**: object wrapper that automatically invokes functions on the properties according to their prefix
 
 Once you have cloned or downloaded the repository you can find some test files in the directory / test.  
 *At the moment the test results are visible in the browser javascript console.*
@@ -15,4 +16,4 @@ Once you have cloned or downloaded the repository you can find some test files i
 
 ### Resources I recommend you to see
 
-- [JavaScript waitForever](https://davidwalsh.name/javascript-wait)
+- [David Walsh's JavaScript waitForever](https://davidwalsh.name/javascript-wait)

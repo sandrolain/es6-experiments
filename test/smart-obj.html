@@ -1,0 +1,26 @@
+<div id="cnt"></div>
+
+<script type="module">
+
+	import SmartObj from "../smart-obj/index.js";
+
+	(async () =>
+	{
+		class MyExtendedSmartObj extends SmartObj
+		{
+			$smile(val)
+			{
+				return `😊${val}`;
+			}
+		}
+
+		const obj = new MyExtendedSmartObj({
+			say: "Hello!",
+			specChars: "& <div>Show this</div>"
+		});
+
+		document.querySelector("#cnt").innerHTML = `${obj.smile__say} ${obj.html__specChars}`;
+
+	})();
+
+</script>
